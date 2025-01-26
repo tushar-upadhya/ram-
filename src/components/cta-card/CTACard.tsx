@@ -1,7 +1,4 @@
 "use client";
-
-import React from "react";
-
 interface CallToActionProps {
   badgeText: string;
   title: string;
@@ -12,15 +9,15 @@ interface CallToActionProps {
   descriptionStyle?: string;
 }
 
-const CTACard: React.FC<CallToActionProps> = ({
+const CTACard = ({
   badgeText,
   title,
   description,
-  containerStyle = "text-center bg-[#0F0D0E]",
-  badgeStyle = "mb-4 inline-block px-3 py-1 text-xs font-medium text-white bg-transparent rounded-md",
-  titleStyle = "text-xl mt-3 font-bold text-[#F9F4DA]",
-  descriptionStyle = "mt-2 text-sm text-[#F9F4DA]/50",
-}) => {
+  containerStyle = "text-center -mt-10 bg-[#0F0D0E]",
+  badgeStyle = "inline-block text-[min(3.5vw,2rem)]",
+  titleStyle = "text-[min(3.5vw,1rem)] capitalize mt-3 font-medium text-[#F9F4DA]",
+  descriptionStyle = "mt-2 text-[min(3.5vw,1rem)] capitalize text-[#F9F4DA]/50",
+}: CallToActionProps) => {
   return (
     <section className={containerStyle}>
       <div className="max-w-2xl mx-auto container">

@@ -2,7 +2,7 @@ import { Badge } from "../ui/badge";
 
 function TurboBusinessBadge() {
   return (
-    <Badge className="bg-teal-600 text-white font-semibold py-1 px-3 rounded-sm text-xs">
+    <Badge className="text-white font-semibold rounded-sm text-[min(3.5vw,1rem)] capitalize">
       TURBOBUSINESS
     </Badge>
   );
