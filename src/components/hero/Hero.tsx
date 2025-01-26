@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({
   buttonText,
   onButtonClick,
   containerStyle = "h-screen flex items-center justify-center bg-[#0F0D0E]",
-  titleStyle = "mb-6 text-xl font-extrabold tracking-tight leading-tight text-[#F9F4DA] md:text-4xl lg:text-5xl capitalize",
+  titleStyle = "mb-6 font-extrabold tracking-tight leading-tight text-[#F9F4DA] text-[min(3.5vw,2rem)] capitalize",
   descriptionStyle = "mb-8 text-base text-gray-400 lg:text-lg sm:px-8",
   buttonStyle = "flex items-center gap-2 px-6 py-3 text-sm font-semibold text-[#231F20] bg-[#FC7428] rounded-lg transition duration-200 hover:bg-[#FC7428]/90",
 }) => {
